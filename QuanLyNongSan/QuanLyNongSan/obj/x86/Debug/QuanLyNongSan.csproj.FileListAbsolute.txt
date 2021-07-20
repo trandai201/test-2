@@ -9,3 +9,5 @@ C:\Users\OS\AppData\Local\Temporary Projects\QuanLyNongSan\obj\x86\Debug\QuanLyN
 C:\Users\OS\AppData\Local\Temporary Projects\QuanLyNongSan\obj\x86\Debug\QuanLyNongSan.pdb
 D:\THU HOA\Học kì 320 - Hè\Công nghệ XML\BaiTapNhom-XML\CML\QuanLyNongSan\QuanLyNongSan\obj\x86\Debug\QuanLyNongSan.exe
 D:\THU HOA\Học kì 320 - Hè\Công nghệ XML\BaiTapNhom-XML\CML\QuanLyNongSan\QuanLyNongSan\obj\x86\Debug\QuanLyNongSan.pdb
+D:\THU HOA\Học kì 320 - Hè\Công nghệ XML\BaiTapNhom-XML\CML\test-2\QuanLyNongSan\QuanLyNongSan\obj\x86\Debug\QuanLyNongSan.exe
+D:\THU HOA\Học kì 320 - Hè\Công nghệ XML\BaiTapNhom-XML\CML\test-2\QuanLyNongSan\QuanLyNongSan\obj\x86\Debug\QuanLyNongSan.pdb
