@@ -81,20 +81,50 @@
 											"top": 107,
 											"width": 75.61181640625,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAF6woelIMeE8iY=",
+											"_parent": {
+												"$ref": "AAAAAAF6tP0Lr/XHulE="
+											},
+											"model": {
+												"$ref": "AAAAAAF6woek6seBlKc="
+											},
+											"font": "Arial;13;0",
+											"left": 29,
+											"top": 122,
+											"width": 75.61181640625,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAF6woe+L8eLLpM=",
+											"_parent": {
+												"$ref": "AAAAAAF6tP0Lr/XHulE="
+											},
+											"model": {
+												"$ref": "AAAAAAF6woe998eIeLY="
+											},
+											"font": "Arial;13;0",
+											"left": 29,
+											"top": 137,
+											"width": 75.61181640625,
+											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 24,
 									"top": 87,
 									"width": 85.61181640625,
-									"height": 38
+									"height": 68
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 24,
 							"top": 64,
 							"width": 85.61181640625,
-							"height": 61,
+							"height": 91,
 							"nameLabel": {
 								"$ref": "AAAAAAF6tP0Lr/XGCME="
 							},
@@ -663,6 +693,24 @@
 								"$ref": "AAAAAAF6tP0LrfXDgOM="
 							},
 							"name": "tenNV",
+							"length": 0
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAF6woek6seBlKc=",
+							"_parent": {
+								"$ref": "AAAAAAF6tP0LrfXDgOM="
+							},
+							"name": "TenDN",
+							"length": 0
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAF6woe998eIeLY=",
+							"_parent": {
+								"$ref": "AAAAAAF6tP0LrfXDgOM="
+							},
+							"name": "MatKhau",
 							"length": 0
 						}
 					]
