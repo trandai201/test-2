@@ -1,15 +1,27 @@
 <?xml version="1.0" standalone="yes"?>
 <HoaDonNhapXuats>
   <HoaDonNhapXuat>
-    <maHD>HD00009</maHD>
+    <maHD>HD00001</maHD>
     <maNV>NV00001</maNV>
     <maKH>KH00001</maKH>
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
   <HoaDonNhapXuat>
-    <maHD>HD00010</maHD>
+    <maHD>HD00002</maHD>
     <maNV>NV00001</maNV>
-    <maKH>KH00001</maKH>
+    <maKH>1</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00003</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>1</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00004</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>2</maKH>
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
 </HoaDonNhapXuats>

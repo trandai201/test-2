@@ -15,7 +15,7 @@ namespace QuanLyNongSan.Model
             Xd.Load(fileName);
             return Xd;
         }
-        public Boolean themHoaDon(XmlDocument XDoc,String maHD,String maNV, String maKH,String loai,XmlNodeList nodeList) {
+        public Boolean themHoaDon(XmlDocument XDoc,String maHD,String maNV, String maKH,String loai) {
             try {
                 XmlElement el = XDoc.CreateElement("HoaDonNhapXuat");
                 XmlElement mHD = XDoc.CreateElement("maHD");

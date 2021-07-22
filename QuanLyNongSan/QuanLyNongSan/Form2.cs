@@ -13,6 +13,7 @@ namespace QuanLyNongSan
     {
         static public Form3 form3;
         public static String nameEmployee;
+        public String maNV = "";
         public Form2()
         {
             InitializeComponent();

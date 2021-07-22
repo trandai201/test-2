@@ -76,13 +76,18 @@ create table  HoaDonNhapXuat_table(
 	maKH varchar(7),
 	LoaiHD varchar(1)
 )
+insert into HoaDonNhapXuat_table values
+('HD00001','NV00001','KH00001','N')
 
-create table ChiTietHoaDon(
+
+create table ChiTietHoaDon_table(
 maHD varchar(7) primary key,
-maSP varchar(7),
+maNS varchar(7),
 soLuong int,
 DonGia int
 )
+insert into ChiTietHoaDon_table values
+('HD00001','NS00001',1,10000)
 
 
 
@@ -99,6 +104,8 @@ insert into KhachHang_table values
 ('KH00007','Hu?nh Trí','0'),
 ('KH00008','Do Nghia','0')
 DELETE FROM KhachHang_table
+
+DROP DATABASE BanNongSan
 /*
 CREATE PROCEDURE UpdateData 
 AS 

@@ -27,8 +27,31 @@ namespace QuanLyNongSan
         private void buttonInHoaDon_Click(object sender, EventArgs e)
         {
             List<XmlNode> nodeList = new List<XmlNode>();
-            XmlDocument XDoc = XmlFile.getXmlDocument("ChiTietHoaDons.xml");
-            XmlNode node = XDoc.cre
+                       XmlDocument XDoc = XmlFile.getXmlDocument("ChiTietHoaDons.xml");
+            for(int i = 0; i<dataGridView1.Rows.Count-1;i++){
+                String temp = "";
+                XmlElement node = XDoc.CreateElement("ChiTietHoaDon");
+      
+                XmlElement maNS = XDoc.CreateElement("maNS");
+                temp = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                Console.WriteLine(temp);
+                 maNS.InnerText = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                XmlElement soLuong = XDoc.CreateElement("soLuong");
+                Console.WriteLine(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                soLuong.InnerText = dataGridView1.Rows[i].Cells[3].Value.ToString();
+                XmlElement donGia = XDoc.CreateElement("DonGia");
+                donGia.InnerText = dataGridView1.Rows[i].Cells[4].Value.ToString(); ;
+
+                node.AppendChild(maNS);
+                node.AppendChild(soLuong);
+                node.AppendChild(donGia);
+                nodeList.Add(node);
+            }
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.add(XDoc, nodeList, textBoxNhaCungCap.Text, "N");
+            MessageBox.Show("Thêm Nông Sản Thành Công", "Thông Báo");
+            dataGridView1.Rows.Clear();
+
 
         }
 
@@ -66,7 +89,7 @@ namespace QuanLyNongSan
                 foreach (XmlNode x in nodeListCTNS)
                 {
                     if (x.ChildNodes[4].InnerText.Equals(maNS))
-                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText);
+                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText+" "+x.ChildNodes[0].InnerText);
                 }
             }
             catch { }
@@ -76,7 +99,7 @@ namespace QuanLyNongSan
         private void dataGridView1_MouseCaptureChanged(object sender, EventArgs e)
         {
             comboBoxLoaiNS.SelectedIndex = comboBoxLoaiNS.Items.IndexOf(dataGridView1.CurrentRow.Cells[2].FormattedValue.ToString());
-            comboBoxTenNongSan.SelectedIndex = comboBoxTenNongSan.Items.IndexOf(dataGridView1.CurrentRow.Cells[1].FormattedValue.ToString());
+            comboBoxTenNongSan.SelectedIndex = comboBoxTenNongSan.Items.IndexOf(dataGridView1.CurrentRow.Cells[1].FormattedValue.ToString() + dataGridView1.CurrentRow.Cells[6].FormattedValue.ToString());
             textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[3].FormattedValue.ToString();
             textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[4].FormattedValue.ToString();
         }
@@ -92,9 +115,14 @@ namespace QuanLyNongSan
                 int soLuong = int.Parse(textBoxSoLuong.Text);
                 int donGia = int.Parse(textBoxDonGia.Text);
                 int tong = soLuong * donGia;
-                dataGridView1.Rows.Add(++stt, comboBoxTenNongSan.SelectedItem.ToString(), comboBoxLoaiNS.SelectedItem.ToString(), soLuong, donGia, tong);
+                dataGridView1.Rows.Add(++stt, comboBoxTenNongSan.SelectedItem.ToString().Substring(0, comboBoxTenNongSan.SelectedItem.ToString().Length - 7), comboBoxLoaiNS.SelectedItem.ToString(), soLuong, donGia, tong,
+                 
+                   comboBoxTenNongSan.SelectedItem.ToString().Substring(comboBoxTenNongSan.SelectedItem.ToString().Length-7));
+                textBoxSoLuong.Text = "";
+                textBoxDonGia.Text = "";
             }
             catch {
+
                 MessageBox.Show("Thêm Nông Sản Thất Bại", "Thông Báo");
             }
        
@@ -104,5 +132,12 @@ namespace QuanLyNongSan
         {
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+   
     }
 }

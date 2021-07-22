@@ -21,9 +21,12 @@ namespace QuanLyNongSan
         private void buttonDangNhap_Click(object sender, EventArgs e)
         {
             DangNhap DN = new DangNhap();
-            if (DN.Login(textBoxTenDN.Text, textBoxMatKhau.Text))
+            String maNV = DN.Login(textBoxTenDN.Text, textBoxMatKhau.Text);
+            if (!maNV.Equals(""))
             {
                 form2 = new Form2();
+                form2.maNV = maNV;
+              
                 form2.Show();
                 
             }
@@ -36,8 +39,8 @@ namespace QuanLyNongSan
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            HoaDon hD = new HoaDon();
-            hD.add();
+            //HoaDon hD = new HoaDon();
+            //hD.add();
         }
 
       

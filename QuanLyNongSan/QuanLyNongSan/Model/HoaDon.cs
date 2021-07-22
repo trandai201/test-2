@@ -22,14 +22,22 @@ namespace QuanLyNongSan.Model
             return maHD;
         }
 
-        public Boolean add() {
+        public Boolean add(XmlDocument XDocCTHD,List<XmlNode> nodeList,String maKhachHang,String l) {
             try {
                 XmlDocument XDoc = XmlFile.getXmlDocument("HoaDonNhapXuats.xml");
                 String maHD_new = taoMaHoaDon(XDoc);
-                String maNV = "NV00001";
-                String maKH = "KH00001";
-                String loai = "N";
-       //         XmlFile.themHoaDon(XDoc,maHD_new,maNV,maKH,loai);
+                String maNV = Form1.form2.maNV;
+                String maKH = maKhachHang;
+                String loai = l;
+                
+                XmlFile.themHoaDon(XDoc,maHD_new,maNV,maKH,loai);
+                foreach (XmlNode x in nodeList) {
+                    XmlNode maHoaDon = XDocCTHD.CreateElement("maHD");
+                    maHoaDon.InnerText = maHD_new;
+                    x.InsertBefore(maHoaDon,x.FirstChild);
+                    XDocCTHD.DocumentElement.AppendChild(x);
+                }
+                XDocCTHD.Save("ChiTietHoaDons.xml");
 
             }
             catch(Exception e) {
