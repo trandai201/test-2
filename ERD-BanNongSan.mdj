@@ -337,13 +337,28 @@
 											"top": 256,
 											"width": 105.21728515625,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAF6x5xWNtAAdKM=",
+											"_parent": {
+												"$ref": "AAAAAAF6tQRXMfX+hyg="
+											},
+											"model": {
+												"$ref": "AAAAAAF6x5xV98/9XjU="
+											},
+											"font": "Arial;13;0",
+											"left": 205,
+											"top": 271,
+											"width": 105.21728515625,
+											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 200,
 									"top": 191,
 									"width": 115.21728515625,
-									"height": 83
+									"height": 98
 								}
 							],
 							"font": "Arial;13;0",
@@ -803,6 +818,15 @@
 								"$ref": "AAAAAAF6tQRXMfX6iTQ="
 							},
 							"name": "maDMNS",
+							"length": 0
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAF6x5xV98/9XjU=",
+							"_parent": {
+								"$ref": "AAAAAAF6tQRXMfX6iTQ="
+							},
+							"name": "Gia",
 							"length": 0
 						}
 					]

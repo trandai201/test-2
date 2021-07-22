@@ -52,22 +52,23 @@ create table  ChiTietNongSan(
 	tenNS nvarchar(50),
 	soLuong int,
 	chiTiet nvarchar(50),
-	maSMNS varchar(7)
+	maSMNS varchar(7),
+	gia int
 
 
 )
 insert into ChiTietNongSan values
-('NS00001','Rau Má',23,'Rau Má Nhà Trồng','DM00001'),
-('NS00002','Rau Muốn',23,'Trồng dưới mương','DM00001'),
-('NS00003','Rau Chân Vịt',23,'Nông Sản Sạch','DM00001'),
-('NS00004','Rau Cần Em',23,'Đảm bảo chất lượng','DM00001'),
-('NS00005','Xoài QN',23,'Những Quả Tuyệt Nhất','DM00002'),
-('NS00006','Dưa Hấu',23,'Được Trồng trên Đảo','DM00002'),
-('NS00007','Táo Tây',23,'Trồng trên vường Địa Đàn','DM00002'),
-('NS00008','Lê',23,'Từ Cây Lê Trong Truyện Kiều','DM00002'),
-('NS00009','Thịt bò Cube',23,'Ít Mỡ Tố cho sức khỏe','DM00003'),
-('NS00010','Thịt Dê',23,'Cực Kì ngon','DM00003'),
-('NS00011','Thịt Gà',23,'Thực phẩm sạch không chất tạo nạt','DM00003')
+('NS00001','Rau Má',23,'Rau Má Nhà Trồng','DM00001',10000),
+('NS00002','Rau Muốn',23,'Trồng dưới mương','DM00001',15000),
+('NS00003','Rau Chân Vịt',23,'Nông Sản Sạch','DM00001',20000),
+('NS00004','Rau Cần Em',23,'Đảm bảo chất lượng','DM00001',12000),
+('NS00005','Xoài QN',23,'Những Quả Tuyệt Nhất','DM00002',12300),
+('NS00006','Dưa Hấu',23,'Được Trồng trên Đảo','DM00002',14000),
+('NS00007','Táo Tây',23,'Trồng trên vường Địa Đàn','DM00002',45000),
+('NS00008','Lê',23,'Từ Cây Lê Trong Truyện Kiều','DM00002',30000),
+('NS00009','Thịt bò Cube',23,'Ít Mỡ Tố cho sức khỏe','DM00003',1000000),
+('NS00010','Thịt Dê',23,'Cực Kì ngon','DM00003',150000),
+('NS00011','Thịt Gà',23,'Thực phẩm sạch không chất tạo nạt','DM00003',146000)
 
 create table  HoaDonNhapXuat_table(
 	maHD varchar(50) primary key,
@@ -75,6 +76,16 @@ create table  HoaDonNhapXuat_table(
 	maKH varchar(7),
 	LoaiHD varchar(1)
 )
+
+create table ChiTietHoaDon(
+maHD varchar(7) primary key,
+maSP varchar(7),
+soLuong int,
+DonGia int
+)
+
+
+
 
 
 
