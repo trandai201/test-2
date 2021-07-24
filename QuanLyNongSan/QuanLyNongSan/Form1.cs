@@ -39,8 +39,8 @@ namespace QuanLyNongSan
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //HoaDon hD = new HoaDon();
-            //hD.add();
+            Form5 form5 = new Form5();
+            form5.Show();
         }
 
       

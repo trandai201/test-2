@@ -90,6 +90,7 @@
     <Compile Include="Model\DangNhap.cs" />
     <Compile Include="Model\DanhMucNongSan.cs" />
     <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\KhachHang.cs" />
     <Compile Include="Model\XMLFile .cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\Restore.cs" />

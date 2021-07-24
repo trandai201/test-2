@@ -23,17 +23,20 @@ insert into NhanVien_table values
 create table KhachHang_table(
 	maKH varchar(7) primary key,
 	tenKH nvarchar(50),
-	SoTienDaDung int default 0
+	SoTienDaDung int default 0,
+	namSinh int ,
+	diaChi nvarchar(50)
 )
 insert into KhachHang_table values
-('KH00001',N'Trần Đại',default),
-('KH00002',N'THu Hòa',default),
-('KH00003',N'Thu Hằng',default),
-('KH00004',N'Thu Hiền',default),
-('KH00005',N'NHật Nga',default),
-('KH00006',N'Hùng Hoàng',default),
-('KH00007',N'Huỳnh Trí',default),
-('KH00008',N'Đõ Nghĩa',default)
+('KH00000','Vãn Lai',default,0,''),
+('KH00001',N'Trần Đại',default,2001,N'Quảng Ngãi'),
+('KH00002',N'Thu Hòa',default,1999,N'Quảng Nam'),
+('KH00003',N'Thu Hằng',default,1989,N'Kom Tum'),
+('KH00004',N'Thu Hiền',default,2002,N'Đắk Lắk'),
+('KH00005',N'NHật Nga',default,2005,N'Đà Nẵng'),
+('KH00006',N'Hùng Hoàng',default,1992,N'Đà Nẵng'),
+('KH00007',N'Huỳnh Trí',default,1970,N'Hà Tĩnh'),
+('KH00008',N'Đõ Nghĩa',default,1990,N'Huế')
 
 
 create table  DanhMucNongSan_table(
@@ -47,7 +50,7 @@ insert into DanhMucNongSan_table values
 ('DM00003',N'Trứng Thịt')
 
 
-create table  ChiTietNongSan(
+create table  ChiTietNongSan_table(
 	maNS varchar(7) primary key,
 	tenNS nvarchar(50),
 	soLuong int,
@@ -56,8 +59,9 @@ create table  ChiTietNongSan(
 	gia int
 
 
+
 )
-insert into ChiTietNongSan values
+insert into ChiTietNongSan_table values
 ('NS00001','Rau Má',23,'Rau Má Nhà Trồng','DM00001',10000),
 ('NS00002','Rau Muốn',23,'Trồng dưới mương','DM00001',15000),
 ('NS00003','Rau Chân Vịt',23,'Nông Sản Sạch','DM00001',20000),
@@ -81,7 +85,7 @@ insert into HoaDonNhapXuat_table values
 
 
 create table ChiTietHoaDon_table(
-maHD varchar(7) primary key,
+maHD varchar(7),
 maNS varchar(7),
 soLuong int,
 DonGia int
@@ -92,20 +96,18 @@ insert into ChiTietHoaDon_table values
 
 
 
-
-
-insert into KhachHang_table values
-('KH00001','Tr?n D?i','0'),
-('KH00002','THu Hòa','0'),
-('KH00003','Thu H?ng','0'),
-('KH00004','Thu Hi?n','0'),
-('KH00005','NH?t Nga','0'),
-('KH00006','Hùng Hoàng','0'),
-('KH00007','Hu?nh Trí','0'),
-('KH00008','Do Nghia','0')
 DELETE FROM KhachHang_table
+DELETE FROM ChiTietNongSan_table
+DELETE FROM ChiTietHoaDon_table
+DELETE FROM HoaDonNhapXuat_table
+DELETE FROM DanhMucNongSan_table
+DELETE FROM NhanVien_table
+
+
+
 
 DROP DATABASE BanNongSan
+
 /*
 CREATE PROCEDURE UpdateData 
 AS 
@@ -139,3 +141,14 @@ END TRY
 BEGIN CATCH  
 		print('2') 
 END CATCH 
+
+insert into KhachHang_table values
+('KH00001','Tr?n D?i','0'),
+('KH00002','THu Hòa','0'),
+('KH00003','Thu H?ng','0'),
+('KH00004','Thu Hi?n','0'),
+('KH00005','NH?t Nga','0'),
+('KH00006','Hùng Hoàng','0'),
+('KH00007','Hu?nh Trí','0'),
+('KH00008','Do Nghia','0')
+

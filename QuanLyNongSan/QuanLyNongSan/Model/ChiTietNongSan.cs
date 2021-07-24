@@ -17,5 +17,10 @@ namespace QuanLyNongSan.Model
             return XDoc.SelectNodes("/ChiTietNongSans/ChiTietNongSan");
         }
 
+        public void setSoluong(int soLuongTraoDoi,XmlNode node) {
+            
+            node.ChildNodes[2].InnerText = (int.Parse(node.ChildNodes[2].InnerText)+ soLuongTraoDoi).ToString();
+        }
+
     }
 }

@@ -12,6 +12,7 @@ namespace QuanLyNongSan
     public partial class Form2 : Form
     {
         static public Form3 form3;
+        static public Form4 form4;
         public static String nameEmployee;
         public String maNV = "";
         public Form2()
@@ -31,6 +32,12 @@ namespace QuanLyNongSan
             form3 = new Form3();
             form3.Show();
 
+        }
+
+        private void buttonXuatNS_Click(object sender, EventArgs e)
+        {
+            form4 = new Form4();
+            form4.Show();
         }
     }
 }

@@ -237,6 +237,7 @@
             this.buttonXuatNS.TabIndex = 2;
             this.buttonXuatNS.Text = "Bán Nông Sản";
             this.buttonXuatNS.UseVisualStyleBackColor = false;
+            this.buttonXuatNS.Click += new System.EventHandler(this.buttonXuatNS_Click);
             // 
             // buttonNhapNS
             // 

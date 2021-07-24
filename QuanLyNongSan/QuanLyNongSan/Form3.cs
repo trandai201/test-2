@@ -26,29 +26,11 @@ namespace QuanLyNongSan
 
         private void buttonInHoaDon_Click(object sender, EventArgs e)
         {
-            List<XmlNode> nodeList = new List<XmlNode>();
-                       XmlDocument XDoc = XmlFile.getXmlDocument("ChiTietHoaDons.xml");
-            for(int i = 0; i<dataGridView1.Rows.Count-1;i++){
-                String temp = "";
-                XmlElement node = XDoc.CreateElement("ChiTietHoaDon");
-      
-                XmlElement maNS = XDoc.CreateElement("maNS");
-                temp = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                Console.WriteLine(temp);
-                 maNS.InnerText = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                XmlElement soLuong = XDoc.CreateElement("soLuong");
-                Console.WriteLine(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                soLuong.InnerText = dataGridView1.Rows[i].Cells[3].Value.ToString();
-                XmlElement donGia = XDoc.CreateElement("DonGia");
-                donGia.InnerText = dataGridView1.Rows[i].Cells[4].Value.ToString(); ;
+            stt = 0;
+            HoaDon hd = new HoaDon();
 
-                node.AppendChild(maNS);
-                node.AppendChild(soLuong);
-                node.AppendChild(donGia);
-                nodeList.Add(node);
-            }
-            HoaDon hoaDon = new HoaDon();
-            hoaDon.add(XDoc, nodeList, textBoxNhaCungCap.Text, "N");
+            hd.ThemHoaDon(dataGridView1, textBoxNhaCungCap.Text,"N");
+   
             MessageBox.Show("Thêm Nông Sản Thành Công", "Thông Báo");
             dataGridView1.Rows.Clear();
 

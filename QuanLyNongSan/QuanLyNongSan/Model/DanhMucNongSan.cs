@@ -16,7 +16,7 @@ namespace QuanLyNongSan.Model
             XmlNodeList nodeList = XDoc.SelectNodes("/DanhMucNongSans/DanhMucNongSan");
             for (int i = 0; i < nodeList.Count; i++) {
                 XmlNode a = nodeList[i];
-                Console.WriteLine(nodeList[i].InnerText+" "+a.InnerText);
+  
 
             }
                 return nodeList;
