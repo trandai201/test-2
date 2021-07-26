@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(138, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 23);
+            this.label1.Size = new System.Drawing.Size(207, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ CSDL - SAO LƯU";
             // 
@@ -76,6 +76,7 @@
             this.buttonXML_SQL.TabIndex = 2;
             this.buttonXML_SQL.Text = "Sao lưu (XML - mySQL)";
             this.buttonXML_SQL.UseVisualStyleBackColor = false;
+            this.buttonXML_SQL.Click += new System.EventHandler(this.buttonXML_SQL_Click);
             // 
             // buttonSQL_XML
             // 
@@ -96,10 +97,11 @@
             this.buttonKhoiPhuc.TabIndex = 4;
             this.buttonKhoiPhuc.Text = "Khôi phục dữ liệu";
             this.buttonKhoiPhuc.UseVisualStyleBackColor = false;
+            this.buttonKhoiPhuc.Click += new System.EventHandler(this.buttonKhoiPhuc_Click);
             // 
             // FormSaoLuuData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bg04;
             this.ClientSize = new System.Drawing.Size(556, 300);

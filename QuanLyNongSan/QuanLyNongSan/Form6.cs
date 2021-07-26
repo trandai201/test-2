@@ -15,5 +15,17 @@ namespace QuanLyNongSan
         {
             InitializeComponent();
         }
+
+        private void buttonXML_SQL_Click(object sender, EventArgs e)
+        {
+            BackUp bk = new BackUp();
+            bk.BackUpData();
+        }
+
+        private void buttonKhoiPhuc_Click(object sender, EventArgs e)
+        {
+            Restore rs = new Restore();
+            rs.RestoreData();
+        }
     }
 }

@@ -198,6 +198,7 @@
             this.buttonQLKhachHang.TabIndex = 6;
             this.buttonQLKhachHang.Text = "Quản lý khách hàng";
             this.buttonQLKhachHang.UseVisualStyleBackColor = false;
+            this.buttonQLKhachHang.Click += new System.EventHandler(this.buttonQLKhachHang_Click);
             // 
             // buttonLSThanhToan
             // 

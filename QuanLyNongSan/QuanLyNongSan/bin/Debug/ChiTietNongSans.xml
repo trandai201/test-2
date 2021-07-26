@@ -3,7 +3,7 @@
   <ChiTietNongSan>
     <maNS>NS00001</maNS>
     <tenNS>Rau Má</tenNS>
-    <soLuong>23</soLuong>
+    <soLuong>13</soLuong>
     <chiTiet>Rau Má Nhà Tr?ng</chiTiet>
     <maSMNS>DM00001</maSMNS>
     <gia>10000</gia>
@@ -51,7 +51,7 @@
   <ChiTietNongSan>
     <maNS>NS00007</maNS>
     <tenNS>Táo Tây</tenNS>
-    <soLuong>23</soLuong>
+    <soLuong>15</soLuong>
     <chiTiet>Tr?ng trên vu?ng Ð?a Ðàn</chiTiet>
     <maSMNS>DM00002</maSMNS>
     <gia>45000</gia>
@@ -67,7 +67,7 @@
   <ChiTietNongSan>
     <maNS>NS00009</maNS>
     <tenNS>Th?t bò Cube</tenNS>
-    <soLuong>23</soLuong>
+    <soLuong>19</soLuong>
     <chiTiet>Ít M? T? cho s?c kh?e</chiTiet>
     <maSMNS>DM00003</maSMNS>
     <gia>1000000</gia>

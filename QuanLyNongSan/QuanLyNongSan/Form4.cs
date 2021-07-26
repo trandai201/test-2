@@ -38,6 +38,7 @@ namespace QuanLyNongSan
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            textBoxMaKhachHang.Text = "";
             loadTable();
         }
 
@@ -144,7 +145,7 @@ namespace QuanLyNongSan
          
             if (maKH.Equals(""))
                 maKH = "KH00000";
-
+            Console.WriteLine(maKH);
             XmlNodeList n = XDocKhachHang.SelectNodes("/KhachHangs/KhachHang[maKH = '" + maKH + "']");
             n[0].ChildNodes[2].InnerText = (int.Parse(n[0].ChildNodes[2].InnerText) + int.Parse(labelTongTien.Text)).ToString();
             XDocKhachHang.Save("KhachHangs.xml");

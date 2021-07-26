@@ -39,8 +39,7 @@ namespace QuanLyNongSan
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.Show();
+       
         }
 
       
