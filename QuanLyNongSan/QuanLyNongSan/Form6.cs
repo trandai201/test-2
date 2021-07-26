@@ -20,12 +20,24 @@ namespace QuanLyNongSan
         {
             BackUp bk = new BackUp();
             bk.BackUpData();
+            MessageBox.Show("Đã sao lưu lên máy chủ","Thông Báo");
         }
 
         private void buttonKhoiPhuc_Click(object sender, EventArgs e)
         {
             Restore rs = new Restore();
             rs.RestoreData();
+            MessageBox.Show("Đã Tải Dữ Liệu Từ Máy Chủ Về", "Thông Báo");
+        }
+
+        private void FormSaoLuuData_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSQL_XML_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

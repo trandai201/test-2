@@ -39,6 +39,7 @@ namespace QuanLyNongSan
         private void Form4_Load(object sender, EventArgs e)
         {
             textBoxMaKhachHang.Text = "";
+            XDocKhachHang = XmlFile.getXmlDocument("KhachHangs.xml");
             loadTable();
         }
 
@@ -59,7 +60,8 @@ namespace QuanLyNongSan
                         );
                 }
                 else
-                    MessageBox.Show("Đầu Vào Sao","Thông Báo");
+                    MessageBox.Show("Đầu Vào Sai","Thông Báo");
+                textBoxSoLuong.Text = "";
             }
             catch { }
             capNhatTongTien();
@@ -142,11 +144,11 @@ namespace QuanLyNongSan
 
           
             String maKH = textBoxMaKhachHang.Text;
-         
+            Console.WriteLine(maKH+"123");
             if (maKH.Equals(""))
                 maKH = "KH00000";
-            Console.WriteLine(maKH);
-            XmlNodeList n = XDocKhachHang.SelectNodes("/KhachHangs/KhachHang[maKH = '" + maKH + "']");
+            
+            XmlNodeList n = XDocKhachHang.SelectNodes("/KhachHangs/KhachHang[maKH = '" + maKH  + "']");
             n[0].ChildNodes[2].InnerText = (int.Parse(n[0].ChildNodes[2].InnerText) + int.Parse(labelTongTien.Text)).ToString();
             XDocKhachHang.Save("KhachHangs.xml");
 
@@ -157,8 +159,17 @@ namespace QuanLyNongSan
           
 
             loadTable();
+            MessageBox.Show("Đã Thanh Toán Thành Công");
         }
 
+        void resetAll() {
+            dataGridView2.Rows.Clear();
+            textBoxMaKhachHang.Text = "";
+            labelDanhSachNS.Text = "";
+            labelTongTien.Text = "";
+        }
+
+     
      
    
 

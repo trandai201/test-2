@@ -225,6 +225,7 @@
             this.buttonCapNhat.TabIndex = 4;
             this.buttonCapNhat.Text = "Cập nhật - Sao lưu Dữ liệu";
             this.buttonCapNhat.UseVisualStyleBackColor = false;
+            this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
             // buttonXuatNS
             // 

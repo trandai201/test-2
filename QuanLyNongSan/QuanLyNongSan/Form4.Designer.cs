@@ -391,6 +391,7 @@
             this.labelTongTien.Size = new System.Drawing.Size(17, 19);
             this.labelTongTien.TabIndex = 14;
             this.labelTongTien.Text = "0";
+           
             // 
             // Form4
             // 
