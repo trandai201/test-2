@@ -3,14 +3,14 @@
   <KhachHang>
     <maKH>KH00000</maKH>
     <tenKH>Vãn Lai</tenKH>
-    <SoTienDaDung>4460000</SoTienDaDung>
+    <SoTienDaDung>4760000</SoTienDaDung>
     <namSinh>0</namSinh>
     <diaChi />
   </KhachHang>
   <KhachHang>
     <maKH>KH00001</maKH>
     <tenKH>Trần Đại</tenKH>
-    <SoTienDaDung>0</SoTienDaDung>
+    <SoTienDaDung>30000</SoTienDaDung>
     <namSinh>2001</namSinh>
     <diaChi>Quảng Ngãi</diaChi>
   </KhachHang>

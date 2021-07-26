@@ -46,6 +46,12 @@ namespace QuanLyNongSan
             form5.Show();
         }
 
+        private void buttonCapNhat_Click(object sender, EventArgs e)
+        {
+            FormSaoLuuData form6 = new FormSaoLuuData();
+            form6.Show();
+        }
+
    
     }
 }

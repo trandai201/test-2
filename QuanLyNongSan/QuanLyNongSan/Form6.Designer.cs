@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonXML_SQL = new System.Windows.Forms.Button();
-            this.buttonSQL_XML = new System.Windows.Forms.Button();
             this.buttonKhoiPhuc = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,16 +77,6 @@
             this.buttonXML_SQL.UseVisualStyleBackColor = false;
             this.buttonXML_SQL.Click += new System.EventHandler(this.buttonXML_SQL_Click);
             // 
-            // buttonSQL_XML
-            // 
-            this.buttonSQL_XML.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.buttonSQL_XML.Location = new System.Drawing.Point(265, 155);
-            this.buttonSQL_XML.Name = "buttonSQL_XML";
-            this.buttonSQL_XML.Size = new System.Drawing.Size(266, 43);
-            this.buttonSQL_XML.TabIndex = 3;
-            this.buttonSQL_XML.Text = "Sao lưu (mySQL - XML)";
-            this.buttonSQL_XML.UseVisualStyleBackColor = false;
-            // 
             // buttonKhoiPhuc
             // 
             this.buttonKhoiPhuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -106,7 +95,6 @@
             this.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bg04;
             this.ClientSize = new System.Drawing.Size(556, 300);
             this.Controls.Add(this.buttonKhoiPhuc);
-            this.Controls.Add(this.buttonSQL_XML);
             this.Controls.Add(this.buttonXML_SQL);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -114,6 +102,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormSaoLuuData";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.FormSaoLuuData_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -127,7 +116,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonXML_SQL;
-        private System.Windows.Forms.Button buttonSQL_XML;
         private System.Windows.Forms.Button buttonKhoiPhuc;
     }
 }

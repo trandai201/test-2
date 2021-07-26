@@ -30,4 +30,22 @@
     <maKH>KH00000</maKH>
     <LoaiHD>X</LoaiHD>
   </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00006</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>KH00001</maKH>
+    <LoaiHD>X</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00007</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>KH00000</maKH>
+    <LoaiHD>X</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00008</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>KH00000</maKH>
+    <LoaiHD>X</LoaiHD>
+  </HoaDonNhapXuat>
 </HoaDonNhapXuats>
