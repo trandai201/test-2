@@ -60,7 +60,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(91, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(581, 37);
+            this.label3.Size = new System.Drawing.Size(484, 31);
             this.label3.TabIndex = 0;
             this.label3.Text = "Phần mềm QUẢN LÝ BÁN NÔNG SẢN";
             // 
@@ -100,6 +100,7 @@
             this.buttonDangNhap.TabIndex = 4;
             this.buttonDangNhap.Text = "Đăng nhập";
             this.buttonDangNhap.UseVisualStyleBackColor = false;
+            this.buttonDangNhap.Click += new System.EventHandler(this.buttonDangNhap_Click);
             // 
             // textBoxMatKhau
             // 
@@ -124,7 +125,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(407, 252);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 26);
+            this.label2.Size = new System.Drawing.Size(95, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -135,14 +136,13 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(407, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 26);
+            this.label1.Size = new System.Drawing.Size(141, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Đăng nhập:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 410);
             this.Controls.Add(this.panel2);
@@ -151,6 +151,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Đăng Nhập";
+       
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

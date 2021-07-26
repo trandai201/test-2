@@ -169,7 +169,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(172, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(534, 37);
+            this.label3.Size = new System.Drawing.Size(443, 31);
             this.label3.TabIndex = 0;
             this.label3.Text = "MENU QUẢN LÝ BÁN NÔNG SẢN";
             // 
@@ -185,7 +185,6 @@
             this.buttonQLNongSan.TabIndex = 7;
             this.buttonQLNongSan.Text = "Quản lý nông sản";
             this.buttonQLNongSan.UseVisualStyleBackColor = false;
-            this.buttonQLNongSan.Click += new System.EventHandler(this.buttonQLNongSan_Click);
             // 
             // buttonQLKhachHang
             // 
@@ -199,6 +198,7 @@
             this.buttonQLKhachHang.TabIndex = 6;
             this.buttonQLKhachHang.Text = "Quản lý khách hàng";
             this.buttonQLKhachHang.UseVisualStyleBackColor = false;
+            this.buttonQLKhachHang.Click += new System.EventHandler(this.buttonQLKhachHang_Click);
             // 
             // buttonLSThanhToan
             // 
@@ -212,7 +212,6 @@
             this.buttonLSThanhToan.TabIndex = 5;
             this.buttonLSThanhToan.Text = "Lịch sử Thanh toán";
             this.buttonLSThanhToan.UseVisualStyleBackColor = false;
-            this.buttonLSThanhToan.Click += new System.EventHandler(this.buttonLSThanhToan_Click);
             // 
             // buttonCapNhat
             // 
@@ -239,6 +238,7 @@
             this.buttonXuatNS.TabIndex = 2;
             this.buttonXuatNS.Text = "Bán Nông Sản";
             this.buttonXuatNS.UseVisualStyleBackColor = false;
+            this.buttonXuatNS.Click += new System.EventHandler(this.buttonXuatNS_Click);
             // 
             // buttonNhapNS
             // 
@@ -252,10 +252,11 @@
             this.buttonNhapNS.TabIndex = 1;
             this.buttonNhapNS.Text = "Nhập Nông Sản";
             this.buttonNhapNS.UseVisualStyleBackColor = false;
+            this.buttonNhapNS.Click += new System.EventHandler(this.buttonNhapNS_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 357);
             this.Controls.Add(this.panel1);
@@ -263,6 +264,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Menu Chính ";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
