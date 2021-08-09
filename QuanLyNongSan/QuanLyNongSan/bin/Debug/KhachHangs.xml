@@ -3,14 +3,14 @@
   <KhachHang>
     <maKH>KH00000</maKH>
     <tenKH>Vãn Lai</tenKH>
-    <SoTienDaDung>4760000</SoTienDaDung>
+    <SoTienDaDung>0</SoTienDaDung>
     <namSinh>0</namSinh>
     <diaChi />
   </KhachHang>
   <KhachHang>
     <maKH>KH00001</maKH>
     <tenKH>Trần Đại</tenKH>
-    <SoTienDaDung>30000</SoTienDaDung>
+    <SoTienDaDung>0</SoTienDaDung>
     <namSinh>2001</namSinh>
     <diaChi>Quảng Ngãi</diaChi>
   </KhachHang>
@@ -33,12 +33,12 @@
     <tenKH>Thu Hiền</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>2002</namSinh>
-    <diaChi>Ð?k L?k</diaChi>
+    <diaChi>Đắk Lắk</diaChi>
   </KhachHang>
   <KhachHang>
     <maKH>KH00005</maKH>
     <tenKH>NHật Nga</tenKH>
-    <SoTienDaDung>0</SoTienDaDung>
+    <SoTienDaDung>268000</SoTienDaDung>
     <namSinh>2005</namSinh>
     <diaChi>Đà Nẵng</diaChi>
   </KhachHang>

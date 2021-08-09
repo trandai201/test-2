@@ -12,12 +12,12 @@ create table NhanVien_table(
 
 
 insert into NhanVien_table values
-('NV00001','Lâm Trường Trương','truong1','12345'),
-('NV00002','Quỳnh Nga Ngô','nga2','12345'),
-('NV00003','Thiên Ðức Phan','duc3','12345'),
-('NV00004','Ðăng Khánh Trịnh','khanh4','12345'),
-('NV00005','Thanh Loan Vương','ThanhLoan70','12345'),
-('NV00006','Trường Phát Vương','phattruong02','12345')
+('NV00001',N'Lâm Trường Trương','truong1','12345'),
+('NV00002',N'Quỳnh Nga Ngô','nga2','12345'),
+('NV00003',N'Thiên Ðức Phan','duc3','12345'),
+('NV00004',N'Ðăng Khánh Trịnh','khanh4','12345'),
+('NV00005',N'Thanh Loan Vương','ThanhLoan70','12345'),
+('NV00006',N'Trường Phát Vương','phattruong02','12345')
 
 
 create table KhachHang_table(
@@ -28,7 +28,7 @@ create table KhachHang_table(
 	diaChi nvarchar(50)
 )
 insert into KhachHang_table values
-('KH00000','Vãn Lai',default,0,''),
+('KH00000',N'Vãn Lai',default,0,''),
 ('KH00001',N'Trần Đại',default,2001,N'Quảng Ngãi'),
 ('KH00002',N'Thu Hòa',default,1999,N'Quảng Nam'),
 ('KH00003',N'Thu Hằng',default,1989,N'Kom Tum'),

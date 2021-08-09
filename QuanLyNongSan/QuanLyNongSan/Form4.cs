@@ -160,6 +160,7 @@ namespace QuanLyNongSan
 
             loadTable();
             MessageBox.Show("Đã Thanh Toán Thành Công");
+            resetAll();
         }
 
         void resetAll() {

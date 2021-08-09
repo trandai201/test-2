@@ -9,103 +9,25 @@
   <ChiTietHoaDon>
     <maHD>HD00002</maHD>
     <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
+    <soLuong>5</soLuong>
     <DonGia>10000</DonGia>
   </ChiTietHoaDon>
   <ChiTietHoaDon>
     <maHD>HD00002</maHD>
-    <maNS>NS00007</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>45000</DonGia>
+    <maNS>NS00006</maNS>
+    <soLuong>6</soLuong>
+    <DonGia>14000</DonGia>
   </ChiTietHoaDon>
   <ChiTietHoaDon>
     <maHD>HD00003</maHD>
     <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
+    <soLuong>5</soLuong>
     <DonGia>10000</DonGia>
   </ChiTietHoaDon>
   <ChiTietHoaDon>
     <maHD>HD00003</maHD>
-    <maNS>NS00007</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>45000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00004</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00004</maHD>
-    <maNS>NS00007</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>45000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00004</maHD>
-    <maNS>NS00009</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>1000000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00007</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>45000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00009</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>1000000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00005</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>2</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00006</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00007</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00007</maHD>
-    <maNS>NS00001</maNS>
-    <soLuong>1</soLuong>
-    <DonGia>10000</DonGia>
-  </ChiTietHoaDon>
-  <ChiTietHoaDon>
-    <maHD>HD00008</maHD>
-    <maNS>NS00008</maNS>
-    <soLuong>10</soLuong>
-    <DonGia>30000</DonGia>
+    <maNS>NS00006</maNS>
+    <soLuong>6</soLuong>
+    <DonGia>14000</DonGia>
   </ChiTietHoaDon>
 </ChiTietHoaDons>
